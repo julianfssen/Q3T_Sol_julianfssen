@@ -89,7 +89,7 @@
    * and set projectFolderMaxDepth to a large number.
    */
   // "projectFolderMinDepth": 2,
-  // "projectFolderMaxDepth": 2,
+  "projectFolderMaxDepth": 5,
 
   /**
    * Today the npmjs.com registry enforces fairly strict naming rules for packages, but in the early
@@ -298,6 +298,19 @@
    * 3. It's useful to have a centralized inventory of all projects and their important metadata.
    */
   "projects": [
+    {
+      "packageName": "airdrop",
+      "projectFolder": "w1/airdrop"
+    },
+    // TODO: Figure out how to use `rush` for non-JS repos
+    // {
+    //   "packageName": "airdrop",
+    //   "projectFolder": "w1/airdrop_program"
+    // },
+    {
+      "packageName": "solana-starter",
+      "projectFolder": "w1/solana-starter/ts"
+    },
     // {
     //   /**
     //    * The NPM package name of the project (must match package.json)
